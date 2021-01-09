@@ -1,0 +1,1 @@
+/usr/bin/c++     -Wl,-rpath,./:./libs -rdynamic CMakeFiles/main.dir/bottomLayer/bLayer.cpp.o CMakeFiles/main.dir/upperLayer/uLayer.cpp.o CMakeFiles/main.dir/main.cpp.o  -o ../main  -L/home/fengxuewei/C++/learn/libs -Wl,-rpath,/home/fengxuewei/C++/learn/libs -lulayer 

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.cpp
+bLayer.h
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.h
+
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.h
+
+/home/fengxuewei/C++/learn/main.cpp
+upperLayer/uLayer.h
+/home/fengxuewei/C++/learn/upperLayer/uLayer.h
+iostream
+-
+
+/home/fengxuewei/C++/learn/upperLayer/uLayer.cpp
+uLayer.h
+/home/fengxuewei/C++/learn/upperLayer/uLayer.h
+../bottomLayer/bLayer.h
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.h
+
+/home/fengxuewei/C++/learn/upperLayer/uLayer.h
+

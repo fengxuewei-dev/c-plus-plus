@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wl,-rpath,./:./libs -shared -Wl,-soname,libulayer.so -o /home/fengxuewei/C++/learn/libs/libulayer.so CMakeFiles/ulayer.dir/uLayer.cpp.o  -L/home/fengxuewei/C++/learn/upperLayer/../libs 

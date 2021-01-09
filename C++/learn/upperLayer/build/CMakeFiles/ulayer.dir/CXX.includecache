@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.h
+
+/home/fengxuewei/C++/learn/upperLayer/uLayer.cpp
+uLayer.h
+/home/fengxuewei/C++/learn/upperLayer/uLayer.h
+../bottomLayer/bLayer.h
+/home/fengxuewei/C++/learn/bottomLayer/bLayer.h
+
+/home/fengxuewei/C++/learn/upperLayer/uLayer.h
+

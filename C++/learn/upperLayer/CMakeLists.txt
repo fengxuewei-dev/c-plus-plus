@@ -1,0 +1,18 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+SET(PROJECT_NAME "ulayer")
+PROJECT(${PROJECT_NAME} CXX)
+
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+# 设置 libblayer.so 的路径  ${CMAKE_SOURCE_DIR} 是 当前 CMakeLists.txt 文件的路径
+LINK_DIRECTORIES("${CMAKE_SOURCE_DIR}/../libs/") 
+# 不允许 CMake 自行加入任何 RPATH
+SET(CMAKE_SKIP_BUILD_RPATH TRUE) 
+# 生成的 libulayer.so 的 RPATH 是 "./" 和 "./libs"
+SET(CMAKE_SHARED_LINKER_FLAGS "-Wl,-rpath,./:./libs")
+
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../libs/")
+# 使用 readelf -d libulayer.so 查看 生成的动态链接库的详细信息
+
+AUX_SOURCE_DIRECTORY(./ SRC_LIST)
+ADD_LIBRARY(${PROJECT_NAME} SHARED ${SRC_LIST})
